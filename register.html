@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang=pt-br dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Craftsy | Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Container pai -->
+      <header>
+        <!-- Cabeçalho -->
+        <nav class="main-nav">
+          <a href="index.html"
+            ><img class="logo" src="img/logo.png" alt="logo craftsy"
+          /></a>
+          <ul class="menu">
+            <li><a href="#">Smartphones</a></li>
+            <li><a href="#">Tablets</a></li>
+            <li><a href="#">Computadores</a></li>
+          </ul>
+          <ul class="menu access">
+            <li><a href="login.html">login</a></li>
+            <li><a href="register.html">registrar</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <form class="form-cadastro" action="register.html" method="post">
+        <fieldset>
+            <legend>Registro</legend>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" value="nome">
+
+            <input type="text" name="email" value="email">
+            <input type="email" name="email" value="email">
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" value="senha">
+
+            <button type="button" name="enviar">Enviar</button>
+
+            <label for="pais">País</label>
+            <select name="pais">
+              <option selected disabled> Selecione um país</option>
+              <option value="BR">Brasil</option>
+              <option value="AR">Argentina</option>
+              <option value="BR">Brasil</option>
+            </select>
+
+            <legend>Gênero</legend>
+            <fieldset>
+              <label for="feminino">Feminino</label>
+              <input type="radio" name="feminino" id="feminino" value="feminino">
+
+              <label for="masculino">Masculino</label>
+              <input type="radio" name="masculino" id="masculino" value="masculino">
+
+              <label for="masculino">Não Binário</label>
+              <input type="radio" name="naobinario" id="naobinario" value="naobinario">
+
+              <label for="masculino">N/A</label>
+              <input type="radio" name="na" id="na" value="na">
+            </fieldset>
+
+
+            <label for="comentarios">Comentários</label>
+            <textarea name="comentarios"></textarea>
+
+        </fieldset>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
